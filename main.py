@@ -26,7 +26,7 @@ import XBXBOT
 
 
 try:
-  client = XBXBOT.PartyBot(
+  client = XBXBOT.XBXBOT(
     device_id=env_vars['DEVICE_ID'],
     account_id=env_vars['ACCOUNT_ID'],
     secret=env_vars['SECRET']
