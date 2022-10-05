@@ -33,16 +33,15 @@ try:
 )
 
 except:
-
-  client = XBXBOT.PartyBot(
+  client = XBXBOT.XBXBOT(
     device_id=os.getenv('DEVICE_ID'),
     account_id=os.getenv('ACCOUNT_ID'),
     secret=os.getenv('SECRET')
 )
   
 try:
-    client.run()
+  client.run()
 except Exception as e:
-    print(e)
-    print("Can't login because your device auths is probably wrong.")
-    print("are you sure you have put yourr IDs in secrets env or in .device  file ?")
+  print(e)
+  print("Can't login because your device auths is probably wrong.")
+  print("are you sure you have put yourr IDs in secrets env or in .device  file ?")
